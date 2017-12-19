@@ -1,0 +1,779 @@
+/*
+* @Author: Marte
+* @Date:   2017-08-02 09:44:36
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-08-07 15:00:44
+*/
+/* 通用样式 */
+body{
+    background-color: #fff;
+    font: 12px/1.5 "Microsoft Yahei",Tahoma,Verdana;
+    color: #272727;
+}
+*{
+    margin:0 auto;
+    padding:0;
+}
+.clear{
+    display: block;
+    overflow:hidden;
+}/* 清除浮动 */
+li{
+    list-style:none;
+    float: left;
+}
+a{
+    text-decoration:none;
+    color: #888;
+}
+/* 头部样式 */
+.header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    border-bottom: 1px solid #e5e5e5;
+    background-color:#fff;
+}
+.header .header_wrap{
+    height: 97px;
+    padding: 0 135px;
+}
+/* 头部logo样式 */
+.header .header_wrap .logo{
+    width: 198px;
+    height:42px;
+    float: left;
+    margin-top:26px;
+}
+/* 头部logo图片样式 */
+.header .header_wrap .logo img{
+    width:100%;
+    height:100%;
+}
+/* 头部导航列表样式 */
+.header .header_wrap ul{
+    float:right;
+}
+/* 头部导航列表每一列样式 */
+.header .header_wrap ul li{
+    padding-left:85px;
+    height:50px;
+}
+/* 头部导航列表每一列内的按钮样式 */
+.header .header_wrap ul li button{
+    display: block;
+    width:50px;
+    height:24px;
+    color: #585c60;
+    font-size: 16px;
+    transition:all 400ms ease;
+    position:relative;
+    margin-top:30px;
+    border:none;
+    background:none;
+    cursor: pointer;
+    outline:none;
+}
+/* 头部导航列表第三列按钮样式 */
+.header .header_wrap ul li:nth-child(3) button{
+    width:96px;
+}
+
+.header .header_wrap ul li button:hover{
+    color:#1AAB8A;
+}
+/* 头部导航列表按钮下各插入的块样式 */
+.header_wrap ul li button:after{
+    content:'';
+    width:0px;
+    height:2px;
+    background-color:#1AAB8A;
+    position:absolute;
+    transition:all 600ms ease;
+}
+/* 头部导航列表第一列按钮默认选中时样式 */
+.header_wrap ul li:nth-child(1) button:after{
+    content:'';
+    width:32px;
+    height:2px;
+    background-color:#1AAB8A;
+    position:absolute;
+    transition:all 600ms ease;
+}
+/* 头部导航列表按钮在下面插入的具体距离样式 */
+.header_wrap ul li button:after{
+    left:9px;
+    bottom:0;
+    top:24px;
+}
+.header_wrap ul li:nth-child(3) button:after{
+    left:15px;
+}
+/* 头部导航列表按钮插入的块的宽度变为32px样式 */
+.header_wrap ul li button:hover:after{
+    width:32px;
+}
+/* 头部导航列表按钮单独控制第三行按钮样式 */
+.header .header_wrap ul li:nth-child(3) button:hover:after{
+    width:64px;
+}
+/* 中间部分内容 */
+.column{
+    background-color: #f6f6f6;
+    width: 100%;
+    min-width:1150px;
+}
+/* 中间部分内容banner区域样式 */
+.column .banner{
+    width:100%;
+    position:relative;
+    height:793px;
+}
+/* 中间部分内容banner区域包含video盒子的样式 */
+.column .banner .video{
+    width:100%;
+    height:793px;
+    position:relative;
+}
+/* 中间部分内容banner区域video元素样式 */
+.column .banner .video video{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    min-width:1150px;
+}
+/* 中间部分内容banner区域链接的样式 */
+.column .banner .btn{
+    position:absolute;
+    left: 210px;
+    bottom: 210px;
+    z-index:2;
+    color:#fff;
+}
+/* 中间部分内容banner区域标题样式 */
+.column .banner .btn .title h1{
+    font-size: 52px;
+    font-weight: 400;
+}
+/* 中间部分内容banner区域文字说明样式 */
+.column .banner .btn .title p{
+    font-size: 19px;
+    margin-bottom: 51px;
+}
+/* 中间部分内容banner区域链接样式 */
+.column .banner .btn .content a{
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius: 0.5em;
+    width: 180px;
+    height: 52px;
+    margin-right: 27px;
+    display: inline-block;
+    line-height: 52px;
+    font-size: 15px;
+    outline:none;
+    text-align: center;
+    transition:all 600ms ease;
+}
+/* 中间部分内容banner区域最后一个链接样式 */
+.column .banner .btn .content a:last-child{
+    background:#2c88f5;
+    border:none;
+}
+/* 中间部分内容banner区域前两个链接hover效果 */
+.column .banner .btn .content .link:hover{
+    background-color:#fff;
+    color:#2c88f5;
+}
+/* 中间部分支持所有邮箱部分样式 */
+.column .mail{
+    min-width:1150px;
+}
+.column .mail .mail_warp{
+    width:1150px;
+    height:748px;
+    position:relative;
+}
+/* 中间部分支持所有邮箱部分文本样式 */
+.column .mail .mail_warp .txt{
+    height: 260px;
+    padding-top: 125px;
+    color: #585c60;
+}
+/* 中间部分支持所有邮箱部分文本标题样式 */
+.column .mail .mail_warp .txt h2{
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 42px;
+}
+/* 中间部分支持所有邮箱部分文本说明文字样式 */
+.column .mail .mail_warp .txt p{
+    opacity:0.6;
+    font-size: 18px;
+}
+/* 中间部分支持所有邮箱部分包含手机图片的盒子样式 */
+.column .mail .mail_warp .phone{
+    width: 356px;
+    position: absolute;
+    top: 61px;
+    left: 643px;
+    z-index:2;
+}
+/* 中间部分支持所有邮箱部分包含手机图片样式 */
+.column .mail .mail_warp .phone img{
+    width:100%;
+    height:100%;
+}
+/* 中间部分支持所有邮箱部分包含小图标的span元素的样式 */
+.column .mail .mail_warp .icon span{
+    position:absolute;
+    z-index:3;
+    animation:move 2s ease infinite;
+}
+/* 定义动画 */
+@keyframes move{
+        0%{
+            transform:translateY(0px);
+        }
+        50%{
+            transform:translateY(-10px);
+        }
+        100%{
+            transform:translateY(0px);
+        }
+    }
+/* 中间部分支持所有邮箱部分包含小图标样式 */
+.column .mail .mail_warp .icon span img{
+    width:100%;
+    height:100%;
+}
+/* 中间部分支持所有邮箱部分m163小图标样式 */
+.column .mail .mail_warp .icon .m163{
+    width: 78px;
+    height: 78px;
+    left: 523px;
+    top: 213px;
+}
+/* 中间部分支持所有邮箱部分天猫小图标样式 */
+.column .mail .mail_warp .icon .cat{
+    width:94px;
+    height:94px;
+    left: 231px;
+    top: 357px;
+    animation:move 3s ease infinite;
+}
+/* 中间部分支持所有邮箱部分QQ小图标样式 */
+.column .mail .mail_warp .icon .qq{
+    width: 86px;
+    height: 86px;
+    left: 1000px;
+    top: 400px;
+    animation:move 1s ease infinite;
+
+}
+/* 中间部分支持所有邮箱部分企业小图标样式 */
+.column .mail .mail_warp .icon .qiye{
+    width: 62px;
+    height: 62px;
+    left: 1050px;
+    top: 262px;
+    animation:move 3.5s ease infinite;
+}
+/* 中间部分支持所有邮箱部分m126小图标样式 */
+.column .mail .mail_warp .icon .m126{
+    width: 63px;
+    height: 63px;
+    left: 924px;
+    top: 458px;
+}
+/* 中间部分支持所有邮箱部分outlook小图标样式 */
+.column .mail .mail_warp .icon .outlook{
+    width: 53px;
+    height: 53px;
+    left: 431px;
+    top: 468px;
+}
+/* 中间部分支持所有邮箱部分信息小图标样式 */
+.column .mail .mail_warp .icon .letter{
+    width: 34px;
+    height:34px;
+    left: 607px;
+    top: 386px;
+    animation:move 2.5s ease infinite;
+}
+/* 中间部分支持所有平台部分样式 */
+.column .store{
+    min-width:1150px;
+}
+.column .store .store_warp{
+    width:1150px;
+    height:816px;
+    position:relative;
+}
+/* 中间部分支持所有平台部分文本样式 */
+.column .store .store_warp .txt{
+    padding-top: 125px;
+    text-align: center;
+    color: #585c60;
+}
+/* 中间部分支持所有平台部分文本标题样式 */
+.column .store .store_warp .txt h2{
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 42px;
+}
+/* 中间部分支持所有平台部分文本内容样式 */
+.column .store .store_warp .txt p{
+    opacity:0.6;
+    font-size: 18px;
+}
+/* 中间部分支持所有平台部分图片样式 */
+.column .store .store_warp img{
+    width:100%;
+}
+/* 中间部分支持所有平台部分包含图片的span元素样式 */
+.column .store .store_warp span{
+    position: absolute;
+    z-index:3;
+}
+/* 中间部分支持所有平台部分watch图片样式 */
+.column .store .store_warp .watch{
+    width: 111px;
+    height: 178px;
+    left: 0;
+    top: 541px;
+}
+/* 中间部分支持所有平台部分iphone图片样式 */
+.column .store .store_warp .iphone{
+    width: 169px;
+    height: 316px;
+    left: 94px;
+    top: 417px;
+}
+/* 中间部分支持所有平台部分ipad图片样式 */
+.column .store .store_warp .ipad{
+    width: 239px;
+    height: 345px;
+    left: 286px;
+    top: 404px;
+}
+/* 中间部分支持所有平台部分macbook图片样式 */
+.column .store .store_warp .macbook{
+    width: 650px;
+    height: 425px;
+    left: 498px;
+    top: 345px;
+}
+/* 中间部分邮件会话部分样式 */
+.column .talk{
+    min-width:1150px;
+    background:url(../img/mobile_bg1.jpg)no-repeat center;
+}
+.column .talk .talk_warp{
+    width:1150px;
+    height: 542px;
+    position:relative;
+}
+/* 中间部分邮件会话部分文本样式 */
+.column .talk .talk_warp .txt{
+    padding-top: 238px;
+    color: #fff;
+}
+/* 中间部分邮件会话部分文本标题样式 */
+.column .talk .talk_warp .txt h2{
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom:27px;
+    line-height:42px;
+}
+/* 中间部分邮件会话部分文本内容样式 */
+.column .talk .talk_warp .txt p{
+    opacity:0.6;
+    font-size:18px;
+}
+/* 中间部分邮件会话部分包含图片的span样式 */
+.column .talk .talk_warp .img span{
+    position:absolute;
+    z-index:3;
+}
+/* 中间部分邮件会话部分图片样式 */
+.column .talk .talk_warp .img span img{
+    width:100%;
+}
+/* 中间部分邮件会话部分iphone图片样式 */
+.column .talk .talk_warp .img .iphone{
+    width: 356px;
+    height: 618px;
+    right: 64px;
+    top: 40px;
+}
+/* 中间部分邮件会话部分card图片样式 */
+.column .talk .talk_warp .img .card1{
+    width: 281px;
+    height: 254px;
+    right: 144px;
+    top: 284px;
+}
+/* 中间部分邮件会话部分card图片样式 */
+.column .talk .talk_warp .img .card2{
+    width: 281px;
+    height: 118px;
+    right: 57px;
+    top: 407px;
+}
+/* 中间部分日程管理部分样式 */
+.column .manger{
+    min-width:1150px;
+}
+.column .manger .manger_warp{
+    width:1150px;
+    height:667px;
+    position:relative;
+}
+/* 中间部分日程管理部分图片背景样式 */
+.column .manger .manger_warp .img_bg{
+    position:absolute;
+    z-index:3;
+    width: 666px;
+    height: 347px;
+    left: -60px;
+    top: 315px;
+}
+/* 中间部分日程管理部分文本样式 */
+.column .manger .manger_warp .txt{
+    color:#585c60;
+    padding-top: 408px;
+    text-align: right;
+}
+/* 中间部分日程管理部分文本标题样式 */
+.column .manger .manger_warp .txt h2{
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom:30px;
+    line-height:42px;
+}
+/* 中间部分日程管理部分文本内容样式 */
+.column .manger .manger_warp .txt p{
+    opacity:0.6;
+    font-size:18px;
+}
+.column .manger .manger_warp .img span{
+    position:absolute;
+    z-index:3;
+}
+/* 中间部分日程管理部分图片样式 */
+.column .manger .manger_warp .img span img{
+    width:100%;
+}
+/* 中间部分日程管理部分card1图片样式 */
+.column .manger .manger_warp .img .card1{
+    width: 152px;
+    height: 164px;
+    left: 5px;
+    top: 418px;
+}
+/* 中间部分日程管理部分card2图片样式 */
+.column .manger .manger_warp .img .card2{
+    width: 173px;
+    height: 188px;
+    left: 194px;
+    top: 410px;
+}
+/* 中间部分日程管理部分card3图片样式 */
+.column .manger .manger_warp .img .card3{
+    width: 120px;
+    height: 139px;
+    left: 430px;
+    top: 450px;
+}
+/* 中间部分日程管理部分tick1图片样式 */
+.column .manger .manger_warp .img .tick1{
+    width: 97px;
+    height: 73px;
+    left: 35px;
+    top: 463px;
+}
+/* 中间部分日程管理部分tick2图片样式 */
+.column .manger .manger_warp .img .tick2{
+    width: 187px;
+    height: 139px;
+    left: 220px;
+    top: 414px;
+}
+/* 中间部分日程管理部分tick3图片样式 */
+.column .manger .manger_warp .img .tick3{
+    width: 70px;
+    height: 51px;
+    left: 458px;
+    top: 491px;
+}
+/* 中间部分了解更多部分样式 */
+.column .more{
+    min-width:1150px;
+}
+.column .more .more_warp{
+    width:1150px;
+    height:667px;
+    position:relative;
+}
+/* 中间部分了解更多部分文本样式 */
+.column .more .more_warp .txt{
+    color:#585c60;
+    padding-top: 308px;
+    position:relative;
+    text-align: left;
+}
+/* 中间部分了解更多部分文本标题样式 */
+.column .more .more_warp .txt h2{
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom:30px;
+    line-height:42px;
+}
+/* 中间部分了解更多部分文本内容样式 */
+.column .more .more_warp .txt p{
+    opacity:0.6;
+    font-size:18px;
+}
+/* 中间部分了解更多部分文本链接样式 */
+.column .more .more_warp .txt .more_link{
+    width: 100px;
+    position:absolute;
+    top: 550px;
+}
+.column .more .more_warp .txt .more_link a{
+    color: #2a83f2;
+    font-size: 18px;
+}
+/* 中间部分了解更多部分文本链接小图标样式 */
+.column .more .more_warp .txt .more_link a span{
+    width: 16px;
+    height: 12px;
+    padding-left: 6px;
+    position:absolute;
+    z-index:3;
+}
+/* 中间部分了解更多部分包含图片的span样式 */
+.column .more .more_warp .img span{
+    position:absolute;
+    z-index:3;
+}
+/* 中间部分了解更多部分图片样式 */
+.column .more .more_warp .img span img{
+    width:100%;
+}
+.column .more .more_warp .img span{
+    width: 657px;
+    height: 471px;
+    left: 480px;
+    top: 180px;
+}
+/* 中间部分下载部分样式 */
+.column .download{
+    min-width:1150px;
+}
+.column .download .download_warp{
+    width:1150px;
+    height:500px;
+    position:relative;
+}
+/* 中间部分下载部分文本样式 */
+.column .download .download_warp .txt{
+    position: relative;
+    width: 1150px;
+    padding: 68px 0 25px;
+    border-bottom: 1px solid #e8e8e8;
+    position:relative;
+}
+/* 中间部分下载部分文本标题样式 */
+.column .download .download_warp .txt h2{
+    font-size: 24px;
+    line-height: 25px;
+    color: #585c60;
+    text-align: left;
+}
+/* 中间部分下载部分右边盒子样式 */
+.column .download .download_warp .img{
+    margin:66px 0;
+    text-align: center;
+}
+/* 中间部分下载部分右边盒子中包含二维码的盒子样式 */
+.column .download .download_warp .img .qr{
+    font-size: 16px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+}
+/* 中间部分下载部分右边盒子中包含二维码样式 */
+.column .download .download_warp .img .qr span{
+    width:134px;
+    height:134px;
+    display: block;
+}
+/* 中间部分下载部分右边盒子文本样式 */
+.column .download .download_warp .img .qr p{
+    font-size: 16px;
+    color: #797d80;
+    margin-top: 11px;
+    line-height: 17px;
+}
+/* 中间部分下载部分右边盒子二维码图片样式 */
+.column .download .download_warp .img .qr img{
+    width:100%;
+}
+/* 中间部分下载部分右边盒子输入手机号部分样式 */
+.column .download .download_warp .img .send{
+    padding: 12px 0 0 103px;
+    position: relative;
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+}
+/* 中间部分下载部分右边盒子输入手机号部分文本样式 */
+.column .download .download_warp .img .send p{
+    font-size: 18px;
+    color: #797d80;
+    margin-bottom: 26px;
+    text-align: left;
+}
+/* 中间部分下载部分右边盒子输入手机号部分输入框大盒子样式 */
+.column .download .download_warp .img .send .sendBox{
+    background-color: #ebeef1;
+    height: 56px;
+    padding: 0 10px 0 16px;
+    border-radius: 4px;
+    width: 306px;
+    position: relative;
+}
+/* 中间部分下载部分右边盒子输入手机号部分输入框样式 */
+.column .download .download_warp .img .send .sendBox input[type=text]{
+    background-color: #ebeef1;
+    height: 56px;
+    width: 306px;
+    color: #585c60;
+    line-height: 56px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border:none;
+    outline:none;
+}
+/* 中间部分下载部分右边盒子输入手机号部分按钮框样式 */
+.column .download .download_warp .img .send .sendBox input[type=submit]{
+    padding: 0 13px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 36px;
+    width: 88px;
+    line-height: 36px;
+    background-color: #2a83f2;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline:none;
+    border:none;
+}
+/* 中间部分下载部分下载列表样式 */
+.column .download .download_warp ul{
+    min-width: 1150px;
+    padding-bottom: 66px;
+}
+/* 中间部分下载部分下载列表每一列的通用样式 */
+.column .download .download_warp ul li{
+    margin-left: 28px;
+    display:block;
+    width: 191px;
+    height: 61px;
+    line-height: 61px;
+    border: 1px solid #bcbebf;
+    border-radius: 5px;
+}
+/* 中间部分下载部分下载列表每一列的链接通用样式 */
+.column .download .download_warp ul li a{
+    display:block;
+    width: 191px;
+    height: 61px;
+    outline:none;
+}
+.column .download .download_warp ul li a:hover p{
+    transform:translateY(-12px);
+}
+.column .download .download_warp ul li a:hover p span{
+    opacity:1;
+}
+/* 中间部分下载部分下载列表每一列的链接内文字通用样式 */
+.column .download .download_warp ul li a p{
+    font-size: 19px;
+    display: inline-block;
+    padding-left:75px;
+    line-height: 20px;
+    padding-top:20px;
+    transition:all 300ms ease;
+}
+.column .download .download_warp ul li a span{
+    opacity:0;
+    font-size: 12px;
+    color: #2a83f2;
+    line-height: 12px;
+    transition:all 300ms ease;
+}
+/* 中间部分下载部分下载列表第一列样式 */
+.column .download .download_warp ul li:nth-child(1) a{
+    background:url(../img/mobile_win.png)no-repeat 10% center;
+    background-size:30px 30px;
+}
+/* 中间部分下载部分下载列表第一列文字样式 */
+.column .download .download_warp ul li:nth-child(1) a p{
+    padding-left:60px;
+}
+/* 中间部分下载部分下载列表第二列样式 */
+.column .download .download_warp ul li:nth-child(2) a{
+    background:url(../img/mobile_mac.png)no-repeat 15% center;
+    background-size:30px 30px;
+}
+/* 中间部分下载部分下载列表第三列样式 */
+.column .download .download_warp ul li:nth-child(3) a{
+    background:url(../img/mobile_iphone2.png)no-repeat 15% center;
+    background-size:30px 30px;
+}
+/* 中间部分下载部分下载列表第四列样式 */
+.column .download .download_warp ul li:nth-child(4) a{
+    background:url(../img/mobile_android.png)no-repeat 15% center;
+    background-size:30px 30px;
+}
+/* 中间部分下载部分下载列表第五列样式 */
+.column .download .download_warp ul li:nth-child(5) a{
+    background:url(../img/mobile_ipad2.png)no-repeat 15% center;
+    background-size:30px 30px;
+}
+/* 底部样式 */
+.footer{
+    min-width:1150px;
+}
+.footer .footer_warp{
+    padding-top: 17px;
+    width: 1150px;
+    height: 63px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8a8d8f;
+    border-top: 1px solid #e8e8e8;
+}
+/* 底部友情链接列表样式 */
+.footer .footer_warp ul{
+    float:right;
+    overflow:visible;
+}
+.footer .footer_warp ul li{
+    padding-left: 10px;
+    font-size: 12px;
+    height:12px;
+    line-height: 12px;
+}
+.fppter .footer_warp ul li a{
+    color: #8a8d8f;
+}

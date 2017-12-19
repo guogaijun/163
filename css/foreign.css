@@ -1,0 +1,198 @@
+/*
+* @Author: Marte
+* @Date:   2017-07-31 17:43:20
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-08-01 17:11:19
+*/
+/* 通用样式 */
+body{
+    line-height: 1.666;
+    background-color: #fff;
+    font-family: verdana;
+    font-size:12px;
+}
+*{
+    margin:0 auto;
+    padding:0;
+}
+.clear{
+    display: block;
+    overflow:hidden;
+}/* 清除浮动 */
+li{
+    list-style:none;
+    float: left;
+}
+a{
+    text-decoration:none;
+    color: #888;
+}
+/* 国外用户登录页面容器样式 */
+.main{
+    width:960px;
+}
+/* 国外用户登录页面头部样式 */
+.header{
+    height:84px;
+    position: relative;
+    background:url(../img/netease_logo.gif)no-repeat left center;
+}
+/* 国外用户登录页面头部标题样式 */
+.header .title{
+    float: left;
+    width: 260px;
+    height: 40px;
+    margin-left: 125px;
+    margin-top: 25px;
+    background:url(../img/foreign_global.png)no-repeat;
+    background-position: -2px -191px;
+}
+/* 国外用户登录页面头部导航样式 */
+.header ul{
+    float:right;
+}
+.header ul li{
+    line-height:84px;
+    padding-left:15px;
+}
+.header ul li:first-child a{
+    color:red;
+}
+/* 国外用户登录页面导中间内容样式 */
+.content{
+    position:relative;
+    width:960px;
+    height:486px;
+    background:url(../img/foreign_bg.jpg)no-repeat;
+}
+/* 国外用户登录页面导中间内容左侧导航栏样式 */
+.content nav{
+    position: absolute;
+    z-index: 2;
+    left: 255px;
+    top: 66px;
+    width: 210px;
+    height: 340px;
+}
+/* 国外用户登录页面导中间内容左侧导航栏图片背景样式 */
+.content nav a{
+    width: 210px;
+    height: 101px;
+    display: block;
+    background:url(../img/foreign_tab.gif)no-repeat;
+}
+.content li{
+    float: none;
+}
+/* 国外用户登录页面导中间内容左侧导航栏列表第一行样式 */
+.content nav li:nth-child(1) a{
+    background-position:-1px -1px;
+}
+/* 国外用户登录页面导中间内容左侧导航栏列表第二行样式 */
+.content nav li:nth-child(2) a{
+    background-position:-513px -103px;
+}
+/* 国外用户登录页面导中间内容左侧导航栏列表第三行样式 */
+.content nav li:nth-child(3) a{
+    background-position: -1px -203px;
+}
+/* 国外用户登录页面导中间内容右侧表单区域样式 */
+.content section{
+    width:420px;
+    height:335px;
+    position:absolute;
+    left: 464px;
+    top: 50px;
+    color: #555;
+    padding-left:28px;
+    overflow:hidden;
+}
+/* 国外用户登录页面导中间内容右侧表单区域列表通用样式 */
+.content section li{
+    padding:6px 0;
+}
+/* 国外用户登录页面导中间内容右侧表单区域标题样式 */
+.content section .title{
+    float: left;
+    margin-top: 2px;
+    width: 265px;
+    height: 32px;
+    background:url(../img/foreign_global.png)no-repeat -384px -64px;
+}
+/* 国外用户登录页面导中间内容右侧表单区域用户名和密码输入框样式 */
+.content section #username,#password{
+    width:190px;
+    height:30px;
+    border: 1px solid #878787;
+}
+.content section #username:hover,#password:hover{
+    border-color:green;
+    background-color:#FAF591;
+}
+/* 国外用户登录页面导中间内容右侧表单区域版本选择框样式 */
+.content section #style{
+    width:190px;
+    border: 1px solid #878787;
+    color:#999;
+}
+/* 国外用户登录页面导中间内容右侧表单区域列表第三行样式 */
+.content section li:nth-child(3) a{
+    color: #007B43;
+    text-decoration: underline;
+}
+/* 国外用户登录页面导中间内容右侧表单区域列表第五行样式 */
+.content section li:nth-child(5) label{
+    margin-right:15px;
+    font-size:12px;
+    margin-left:40px;
+}
+/* 国外用户登录页面导中间内容右侧表单区域登录按钮样式 */
+.content section input[name=login]{
+    width: 86px;
+    height: 34px;
+    border: none;
+    cursor: pointer;
+    margin-left:40px;
+    background-color:#5BB854;
+    color:#fff;
+    letter-spacing:4px;
+}
+.content section input[name=login]:hover{
+    background:#266721;
+}
+/* 国外用户登录页面导中间内容右侧表单区域列表第八行样式 */
+.content section li:nth-child(8){
+    margin-left:40px;
+    padding:2px 0px;
+}
+/* 国外用户登录页面导中间内容右侧表单区域列表第七行样式 */
+.content section li:nth-child(7){
+    margin-left:40px;
+    padding:2px 0px;
+}
+/* 国外用户登录页面导中间内容右侧表单区域列表第七行样式 */
+.content section li:nth-child(7) a{
+    color: #F80606;
+    font-size:14px;
+}
+/* 国外用户登录页面导中间内容右侧表单区域列表第八行样式 */
+.content section li:nth-child(8) a{
+    font-weight:bold;
+    color: #007B43;
+    text-decoration:underline;
+}
+
+/* 国外用户登录页面底部样式 */
+.footer{
+    width:960px;
+    height:20px;
+    margin-top:10px;
+    text-align: center;
+}
+.footer ul li{
+    float:none;
+    display: inline-block;
+    color: #888;
+    line-height:20px;
+    margin-right: 10px;
+}

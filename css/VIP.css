@@ -1,0 +1,544 @@
+/*
+* @Author: Marte
+* @Date:   2017-07-28 15:28:25
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-08-04 16:09:17
+*/
+/* 通用样式 */
+body{
+    font: 12px/1.14 "MicroSoft Yahei", "宋体",\5b8b\4f53;
+    color: #000;
+}
+*{
+    margin:0 auto;
+    padding:0;
+}
+.clear{
+    display: block;
+    overflow:hidden;
+}/* 清除浮动 */
+li{
+    list-style:none;
+    font-size:14px;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+/* VIP邮箱网页头部样式 */
+.header{
+    background: -webkit-linear-gradient(top,#007360,#006655);
+    width:100%;
+    position:fixed;
+    z-index: 999;
+    min-width:1080px;
+}
+.header .header_wrap{
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+}
+/* VIP邮箱网页头部logo样式 */
+.header span{
+    float: left;
+    margin: 9px 0 0 0;
+    height: 27px;
+    width: 125px;
+    background:url(../img/VIP_sprite_more.png)no-repeat;
+    background-position:0 -30px;
+}
+/* VIP邮箱网页头部导航连接样式 */
+.header p{
+    color: #a8c2bc;
+    float: right;
+}
+.header p a{
+    position: relative;
+    margin-left: 35px;
+    color: #a8c2bc;
+    display:inline-block;
+    transition:all 600ms ease;
+}
+.header p a:hover{
+    transform:scale(2,2);
+}
+/* VIP邮箱网页头部导航时钟小图标样式 */
+.header p a i{
+    position: absolute;
+    top: 55%;
+    left: -14px;
+    width: 14px;
+    height: 14px;
+    margin-top: -6px;
+    background:url(../img/VIP_sprite_more.png)no-repeat -30px -540px;
+}
+/* VIP邮箱网页主体内容样式 */
+.column{
+    position:relative;
+    width: 100%;
+    min-width:1080px;
+}
+.column .shadow{
+    position:absolute;
+    top:800px;
+    left:0;
+    width:100%;
+    height:297px;
+    z-index:2;
+    background:url(../img/VIP_shadow.png)repeat-x;
+}
+/* VIP邮箱网页主体内容上部分样式 */
+.column .column-top{
+    width:100%;
+    height:1095px;
+    min-width:960px;
+    background-color:#006d5b;
+    background:url(../img/VIP_banner.jpg)no-repeat center top;
+    background-size:contain;
+    position:relative;
+}
+/* VIP邮箱网页主体内容上部分动态图标样式 */
+.column .column-top .go_bottom{
+    position: absolute;
+    display: block;
+    z-index: 100;
+    bottom: 55px;
+    left: 50%;
+    width: 50px;
+    margin-left: -20px;
+    font-size: 12px;
+    color:#FFF;
+    cursor: pointer;
+    text-align:center;
+}
+/* VIP邮箱网页主体内容上部分动态图标内文字样式 */
+.column .column-top .go_bottom p{
+    margin-bottom: 10px;
+    display: block;
+}
+/* VIP邮箱网页主体内容上部分动态图标内图片样式 */
+.column .column-top .go_bottom img{
+    width: 26px;
+    display: block;
+}
+/* VIP邮箱网页主体内容上部分登录框样式 */
+.column-top .loginbox{
+    width:320px;
+    height:394px;
+    background:rgba(0,0,0,.4);
+    font-size: 12px;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    margin-left: 10%;
+}
+.column-top .loginbox ul{
+    margin-top:30px;
+}
+.column-top .loginbox ul li{
+    padding-top:15px;
+    text-align:center;
+    width:260px;
+    height:40px;
+    color: #fff;
+}
+/* VIP邮箱网页主体内容上部分登录框两个输入框盒子样式 */
+.column-top .loginbox .inputbox1,.inputbox2{
+    width:260px;
+    height:40px;
+    background-color:#fff;
+}
+/* VIP邮箱网页主体内容上部分登录框账号密码输入框样式 */
+.column-top .loginbox input[type=text],input[type=password]{
+    width:118px;
+    height:40px;
+    border:none;
+    color: #333;
+    font-size: 13px;
+    font-family: Verdana;
+    float:left;
+    padding-left:10px;
+}
+.column-top .loginbox .inputbox1{
+    background: #ececec;
+}
+/* VIP邮箱网页主体内容上部分登录框账号输入框后的文字样式 */
+.column-top .loginbox .inputbox1 span{
+    margin-left:20px;
+    color: #999;
+    font-weight: 700;
+    font-size: 13px;
+    line-height:40px;
+    display:inline-block;
+    width:110px;
+}
+/* VIP邮箱网页主体内容上部分登录框登录按钮样式 */
+.column-top .loginbox input[name=login]{
+    width:260px;
+    height:40px;
+    background: -webkit-linear-gradient(top,#56bfae,#50b4a3);
+    box-shadow: 1px 1px 0 rgba(0,0,0,.1);
+    color: #fff;
+    text-shadow: 1px 1px rgba(0,0,0,.2);
+    font-size: 1pc;
+    border:none;
+}
+/* VIP邮箱网页主体内容上部分登录框版本框样式 */
+.column-top .loginbox select{
+    border:none;
+    background:none;
+    font-size:12px;
+    color: #fff;
+}
+.column-top .loginbox li:nth-child(4) div{
+    width:120px;
+}
+/* VIP邮箱网页主体内容上部分列表第四行样式 */
+.column-top .loginbox li:nth-child(4){
+    text-align:left;
+}
+/* VIP邮箱网页主体内容上部分左浮动通用样式 */
+.column-top .loginbox li .left{
+    float:left;
+}
+/* VIP邮箱网页主体内容上部分右浮动通用样式 */
+.column-top .loginbox li .right{
+    float:right;
+}
+/* VIP邮箱网页主体内容上部分注册、支付按钮样式 */
+.column-top .loginbox .register-btn,.pay-btn{
+    border: 1px solid #ddd;
+    color: #fff;
+    width: 100px;
+    height: 34px;
+    background:none;
+    cursor: pointer;
+}
+.column-top .loginbox .register-btn:hover,.pay-btn:hover{
+    background-color:#AFADAD;
+}
+/* VIP邮箱网页主体内容上部分列表最后一行样式 */
+.column-top .loginbox #last{
+    text-align:left;
+    font-size: 12px;
+    line-height:20px;
+}
+/* VIP邮箱网页主体内容上部分二维码样式 */
+.column-top .loginbox .img{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top:0;
+    right:0;
+    background: url(../img/VIP_urs_sprite.png) no-repeat;
+    background-position: -45px 0;
+    transition:all 0.6s ease 0s;
+    cursor:pointer;
+}
+.column-top .loginbox .img:hover{
+    background-position:-83px -38px;
+}
+/* VIP邮箱网页主体内容下部分样式 */
+.column .column-bottom{
+    width:100%;
+    position:absolute;
+    top:1095px;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏样式 */
+.column .column-bottom .public{
+    width:100%;
+    height:1190px;
+    background: #006d5b;
+    background:url(../img/VIP_bg.jpg)no-repeat center center;
+    background-size:cover;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏上部分样式 */
+.column .column-bottom .public .public_top{
+    padding-top: 164px;
+}
+.public .public_top .top_warp{
+    width:960px;
+    position: relative;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏上部分标题样式 */
+.top_warp h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 48px;
+    padding: 50px 0 10px;
+}
+.top_warp .title{
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 0 70px;
+    text-align: center;
+}
+.top_warp .section{
+    padding-bottom: 60px;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏上部分图片链接样式 */
+.top_warp .section a{
+    display: block;
+    width: 260px;
+    margin: 0 30px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.top_warp .section a img{
+    transition:all 1.5s ease;
+}
+.top_warp .section a img:hover{
+    transform:rotate(360deg);
+}
+/* VIP邮箱网页主体内容下部分星空背景栏上部分图片链接内标题样式 */
+.top_warp .section a h3{
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏上部分图片链接内文字样式 */
+.top_warp .section a p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+    text-align: left;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏上部分跳转链接盒子样式 */
+.top_warp .link{
+    text-align:center;
+    margin: 0 0 80px 0;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏上部分跳转链接样式 */
+.top_warp .link a{
+    padding: 0 15px;
+    line-height: 38px;
+    color: #b98b2e;
+    font-size: 14px;
+    border: 1px solid #b98b2e;
+    display: inline-block;
+    text-align: center;
+    transition:all 600ms ease;
+}
+.top_warp .link a:hover{
+    background-color:#b98b2e;
+    color:#fff;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏中间部分样式 */
+.public .public_center .center_warp{
+    width:960px;
+    position: relative;
+}
+/* VIP邮箱网页主体内容下部分星空背景栏底部样式 */
+.public .public_bottom{
+    padding: 50px 0;
+    color: #999;
+    text-align: center;
+    font-size: 16px;
+    line-height: 36px;
+}
+/* VIP邮箱网页主体内容下部分个人注册样式 */
+.column .column-bottom .register{
+    height:211px;
+    background: #111;
+}
+.column .column-bottom .register .register_warp{
+    width:960px;
+    position: relative;
+}
+/* VIP邮箱网页主体内容下部分个人注册标题样式 */
+.register_warp h2{
+    font-size: 24px;
+    padding: 28px 0 20px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    font-weight: normal;
+}
+/* VIP邮箱网页主体内容下部分个人注册按钮样式 */
+.register_warp .btn{
+    width: 330px;
+}
+/* VIP邮箱网页主体内容下部分个人注册按钮通用样式 */
+.register_warp .btn a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    float: left;
+    margin-right: 30px;
+    line-height: 50px;
+    background: #ba8b2e;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* VIP邮箱网页主体内容下部分个人注册第二个按钮样式 */
+.register_warp .btn .btn2{
+    margin-right: 0;
+    background: #999;
+}
+/* VIP邮箱网页主体内容下部分个人注册电话链接样式 */
+.register_warp .tel{
+    font-size: 14px;
+    color: #b5882d;
+    padding: 18px 0 25px;
+    text-align: center;
+}
+.register_warp .tel a{
+    font-size: 20px;
+    font-family: "Georgia";
+    color: #b5882d;
+    cursor: default;
+}
+/* VIP邮箱网页主体内容下部分底部链接样式 */
+.column .column-bottom .footer{
+    padding: 20px 0;
+}
+.column .column-bottom .footer .footer_warp{
+    width:960px;
+    position: relative;
+}
+/* VIP邮箱网页主体内容下部分底部链接弹性盒子样式 */
+.column .column-bottom .footer .footer_warp .footer_top{
+    width:960px;
+    display: flex;
+    flex-direction:row;
+}
+/* VIP邮箱网页主体内容下部分底部链接弹性盒子下的div样式 */
+.footer_warp .footer_top div{
+    border-right: 1px solid #ddd;
+    padding: 2px 55px;
+}
+/* VIP邮箱网页主体内容下部分底部链接弹性盒子下最后一个div样式 */
+.footer_warp .footer_top div:last-child{
+    border:none;
+}
+/* VIP邮箱网页主体内容下部分底部链接弹性盒子下的div的小图标样式 */
+.footer_warp .footer_top div span{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 20px;
+    background: url(../img/VIP_sprite.png) no-repeat;
+    text-align:center;
+}
+/* VIP邮箱网页主体内容下部分底部链接弹性盒子下的div的文字样式 */
+.footer_warp .footer_top div p{
+    font-size: 12px;
+    color: #666;
+}
+.footer_warp .footer_top div .title{
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 16px;
+    color: #333;
+    text-align:center;
+}
+/* VIP邮箱网页主体内容下部分底部链接文字链接样式 */
+.footer_warp .footer_bottom{
+    text-align: center;
+    color: #666;
+    padding: 27px 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+.footer_warp .footer_bottom a{
+    color:#666;
+}
+/* VIP邮箱网页右侧咨询栏样式 */
+.aside{
+    background: rgba(0,109,91,.6);
+    position:fixed;
+    top: 407px;
+    right: 25px;
+    width: 96px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    z-index: 4;
+    font-family: "宋体",SimSun;
+}
+/* VIP邮箱网页右侧咨询栏上部分样式 */
+.aside .top{
+    padding-top: 8px;
+    cursor: pointer;
+}
+/* VIP邮箱网页右侧咨询栏上部分头像样式 */
+.aside .top .top_img{
+    width: 84px;
+    height: 85px;
+    background: url(../img/VIP_kf_sprite.png) no-repeat 0 -80px;
+}
+/* VIP邮箱网页右侧咨询栏上部分文字样式 */
+.aside .top p{
+    border-bottom: 1px dashed;
+    margin: 0 8px;
+    padding: 6px 0;
+}
+/* VIP邮箱网页右侧咨询栏下部分样式 */
+.aside .bottom{
+    padding-top: 8px;
+    cursor: pointer;
+}
+/* VIP邮箱网页右侧咨询栏下部分头像样式 */
+.aside .bottom .bottom_img{
+    background-position: 0 0;
+    height: 80px;
+    width: 80px;
+    background: url(../img/VIP_kf_sprite.png) no-repeat;
+}
+/* VIP邮箱网页右侧咨询栏下部分文字样式 */
+.aside .bottom p{
+    margin: 0 8px;
+    padding: 6px 0;
+}
+/* VIP邮箱网页回到顶部链接样式 */
+.go_top{
+    position: fixed;
+    bottom: 5%;
+    right: 15%;
+    margin-left: 550px;
+    z-index: 101;
+    width: 48px;
+    height: 48px;
+    background: #000;
+}
+/* VIP邮箱网页回到顶部链接图片样式 */
+.go_top img{
+    width: 21px;
+    height: 25px;
+    display: block;
+    margin: 12px auto;
+}
+/* VIP邮箱网页回到顶部链接图片特效样式 */
+.go_top:before{
+    content:'回到顶部';
+    width: 48px;
+    height: 48px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    font-size:12px;
+    letter-spacing:5px;
+    color:#fff;
+    text-align:center;
+    line-height:23px;
+    opacity:0;
+    transform:scale(0.1,1);
+    transition:all 600ms ease;
+}
+.go_top:hover:before{
+    opacity:1;
+    transform:scale(1,1);
+}
+.go_top:hover img{
+    display: none;
+}

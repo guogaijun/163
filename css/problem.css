@@ -1,0 +1,268 @@
+/*
+* @Author: Marte
+* @Date:   2017-08-01 15:05:35
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-08-01 17:18:58
+*/
+/* 通用样式 */
+body{
+    line-height: 1.666;
+    background-color: #fff;
+    font-family: verdana;
+    font-size:12px;
+}
+*{
+    margin:0 auto;
+    padding:0;
+}
+.clear{
+    display: block;
+    overflow:hidden;
+}/* 清除浮动 */
+li{
+    list-style:none;
+    float: left;
+}
+a{
+    text-decoration:none;
+    color: #888;
+}
+/* 问题页面，页面容器 */
+.main{
+    width:960px;
+}
+/* 问题页面头部样式 */
+.header{
+    width:1024px;
+    overflow:hidden;
+}
+/* 问题页面头部上部分样式 */
+.header .top{
+    width:1024px;
+    height:77px;
+    background:url(../img/help_logo-163.jpg)left center,
+                url(../img/help_logo-126.jpg)150px center,
+                url(../img/help_logo-yeah.jpg)300px center,
+                url(../img/help_logo-help.jpg)450px center;
+    background-repeat:no-repeat;
+}
+/* 问题页面头部上部分文字样式 */
+.header .top p{
+    float: right;
+    line-height:77px;
+    color: #005590;
+}
+.header .top p a{
+    margin:0px 10px;
+    color: #005590;
+}
+/* 问题页面头部上部分最后一个a样式 */
+.header .top p a:last-of-type{
+    color: #d90000;
+}
+/* 问题页面头部中间部分样式 */
+.header .center{
+    width:1024px;
+    height:35px;
+    background: #3b79b5;
+}
+/* 问题页面头部中间部分div通用样式 */
+.header .center div{
+    float: left;
+    height:35px;
+    width: 134px;
+    background-color:#184D80;
+}
+/* 问题页面头部中间部分div下a标签样式 */
+.header .center div a{
+    color:#fff;
+    display: block;
+    height:35px;
+    width: 134px;
+    text-align:center;
+    line-height:35px;
+    font-size:15px;
+}
+.header .center div:hover{
+    background-color:#184D80;
+}
+/* 问题页面头部中间部分第二个按钮样式 */
+.header .center .btn1{
+    background: #3b79b5;
+}
+/* 问题页面头部倒三角小图标样式 */
+.header .aside{
+    width:1024px;
+    height:10px;
+    background: url(../img/help_sprite_1.png) no-repeat -9999px -9999px;
+    background-position:153px -284px;
+    background-color: #ebf2f6;
+}
+/* 问题页面头部底部样式 */
+.header .bottom{
+    width:1024px;
+    height: 84px;
+    padding-top: 12px;
+    background-color: #ebf2f6;
+    position:relative;
+}
+/* 问题页面头部底部搜索图标样式 */
+.header .bottom b{
+    position: absolute;
+    top: 9px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/help_sprite_1.png) no-repeat -9999px -9999px;
+    background-position: 0 -130px
+}
+/* 问题页面头部底部搜索输入框样式 */
+.header .bottom input[type=text]{
+    width: 531px;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 13px;
+    border: 0;
+    margin-left: 86px;
+    font-size: 14px;
+    color: #333;
+    background: url(../img/help_sprite_1.png) no-repeat -9999px -9999px;
+    background-position: 0 -79px;
+}
+/* 问题页面头部底部搜索按钮样式 */
+.header .bottom input[type=submit]{
+    width: 106px;
+    height: 39px;
+    margin-left: 10px;
+    border: 0;
+    background-color:#3D82C5;
+    color:#fff;
+    font-xize:15px;
+}
+/* 问题页面头部底部热门搜索列表样式 */
+.header .bottom ul{
+    padding-left: 86px;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 3px;
+    color:#666;
+}
+.header .bottom ul li{
+    padding-right:9px;
+}
+.header .bottom ul li a{
+    color: #184D80
+}
+.header .bottom ul li a:hover{
+    text-decoration:underline;
+}
+/* 问题页面中间内容样式 */
+.column{
+    width:1024px;
+    position:relative;
+}
+.column .column_warp{
+    width:960px;
+    margin:25px auto;
+}
+/* 问题页面中间内容左侧导航栏样式 */
+.column .column_warp .nav{
+    width:199px;
+    float: left;
+    border-right: 1px solid #e3e3e3;
+}
+/* 问题页面中间内容左侧导航栏列表样式 */
+.column .column_warp .nav ul li{
+    float:none;
+    position:relative;
+}
+/* 问题页面中间内容左侧导航栏列表下超链接样式 */
+.column .column_warp .nav ul li a{
+    font-size: 14px;
+    line-height: 25px;
+    display: block;
+    padding: 5px 0 6px 40px;
+}
+/* 问题页面中间内容左侧导航栏列表下超链接内图片样式 */
+.column .column_warp .nav ul li a img{
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 30px;
+    height: 30px;
+}
+/* 问题页面中间内容左侧导航栏列表下超链接内下拉图标样式 */
+.column .column_warp .nav ul li a b{
+    position: absolute;
+    top: 7px;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/problem_sprite-ico_v2.png) no-repeat -160px 0;
+}
+/* 问题页面中间内容右侧内容样式 */
+.column .column_warp .content{
+    width:750px;
+    float: right;
+}
+/* 问题页面中间内容右侧内容列表边框虚线背景图样式 */
+.column .column_warp .content ul li{
+    float: none;
+    background: url(../img/help_bg-line.png) repeat-x 0 bottom;
+}
+/* 问题页面中间内容右侧内容列表下超链接样式 */
+.column .column_warp .content ul li a{
+    font-size:16px;
+    line-height: 25px;
+    display: block;
+    padding: 5px 0 6px 40px;
+}
+/* 问题页面中间内容右侧内容列表下开始不显示的文字样式 */
+.column .column_warp .content ul li a span{
+    display:none;
+    float: right;
+}
+.column .column_warp ul li a:hover{
+    background-color: #3F86CB;
+    color:#333;
+}
+/* 问题页面中间内容右侧内容列表下开始不显示的文字显示样式 */
+.column .column_warp ul li a:hover span{
+    display: block;
+}
+/* 问题页面中间内容banner图片样式 */
+.column .banner{
+    float: right;
+    width:785px;
+    height:90px;
+    background:url(../img/problem_vip-lock-mot.jpg)no-repeat;
+}
+/* 问题页面底部样式 */
+.footer{
+    width:1024px;
+}
+.footer .footer_warp{
+    font-size: 12px;
+    line-height: 21px;
+    padding: 30px 0;
+    text-align: center;
+    color: #888;
+}
+.footer .footer_warp a{
+    margin-right: 14px;
+}
+/* 右侧固定呼叫客服样式 */
+.call{
+    position: fixed;
+    bottom: 200px;
+    right: 0;
+    height: 100px;
+    line-height: 15px;
+    font-size: 14px;
+    width: 34px;
+    padding: 18px 8px 0 8px;
+    vertical-align: middle;
+    background-color: #2c75b8;
+    color: #fff;
+    box-sizing: border-box;
+}

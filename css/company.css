@@ -1,0 +1,402 @@
+/*
+* @Author: Marte
+* @Date:   2017-07-27 13:02:00
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-28 15:16:46
+*/
+/* 通用样式 */
+*{
+    margin:0 auto;
+    padding:0;
+}
+body {
+    color: #000;
+    background: #fff;
+    font-size: 12px;
+    line-height: 1.666;
+}
+.clear{
+    display: block;
+    overflow:hidden;
+}/* 清除浮动 */
+li{
+    list-style:none;
+    font-size:14px;
+    float: left;
+}
+a{
+    font-size:16px;
+    text-decoration:none;
+}
+/* 企业邮箱头部样式 */
+.header{
+    position: fixed !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    min-width: 1080px;
+    left: 0;
+    border-bottom: 1px solid #E0E0E0;
+    font-size:16px;
+    background: #ffffff;
+    z-index: 999;
+}
+/* 企业邮箱头部中间样式 */
+.header .wrap{
+    width:1080px;
+    height:76px;
+    background-image:url(../img/company_logo.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+/* 企业邮箱头部导航栏样式 */
+.header .header-nav{
+    float:right;
+    height:76px;
+}
+.header .header-nav ul li{
+    padding-top: 14px;
+    height: 62px;
+    line-height: 58px;
+    vertical-align: middle;
+    display: list-item;
+}
+.header-nav li a{
+    display: inline-block;
+    height: 58px;
+    padding: 0 18px;
+    color: #666666;
+}
+/* 企业邮箱头部导航栏列表hover样式 */
+.header-nav .list:hover{
+    color: #0154a0;
+    border-bottom: 4px solid #0154a0;
+}
+/* 企业邮箱头部导航栏列表选择13个li */
+.header-nav li:nth-child(13) a{
+    color:#999999;
+    font-size:14px;
+}
+/* 企业邮箱头部导航栏列表选择最后一个个li */
+.header-nav li:last-child a{
+    display: inline-block;
+    font-size:14px;
+    background: #b61820;
+    color: #ffffff;
+    border-radius:10px;
+    height:18px;
+    line-height:18px;
+}
+/* 企业邮箱中间部分内容样式 */
+.column{
+    width:100%;
+    min-width:1080px;
+    padding-top:76px;
+    position:relative;
+}
+/* 企业邮箱中间部分主体内容样式 */
+.column .column-body{
+    width:100%;
+    min-width:1080px;
+    position:relative;
+}
+/* 企业邮箱中间部分主体轮播图内容样式 */
+.column .column-body .banner{
+    width:100%;
+    min-width:1080px;
+    height:520px;
+    background-image:url(../img/company_banner.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color:rgb(242, 242, 242);
+}
+/* 企业邮箱中间部分主体圆形图标导航内容样式 */
+.column .column-body .advantage{
+    padding:70px 0 60px 0;
+}
+/* 企业邮箱中间部分主体圆形图标导航内容样式 */
+.column .column-body .advantage .advantage_wrap{
+    width:1080px;
+}
+.advantage_wrap ul li{
+    width:180px;
+    height:190px;
+    text-align:center;
+}
+/* 企业邮箱中间部分主体圆形图标样式 */
+.advantage_wrap .pic img {
+    width: 125px;
+    height: 125px;
+}
+/* 企业邮箱中间部分主体圆形图标下的文字样式 */
+.advantage_wrap .txt{
+    font-size: 18px;
+    line-height: 42px;
+    color: #025bc9;
+}
+/* 企业邮箱中间部分主体购买栏样式 */
+.column .column-body .price{
+    padding:50px 0;
+    color:#666;
+    font-size:24px;
+    text-align:center;
+    background: #f1f3f4 !important;
+}
+/* 企业邮箱中间部分主体购买栏样式 */
+.column .column-body .price .price_wrap{
+    width:1080px;
+}
+/* 企业邮箱中间部分主体购买栏标题文字样式 */
+.price_wrap .title{
+    border-bottom: 1px solid #dce6ec;
+}
+.price_wrap .title span{
+    font-size: 46px;
+    color: #025bc9;
+    font-weight: bold;
+}
+/* 企业邮箱中间部分主体购买栏包含输入框的盒子的样式 */
+.price_wrap .content_wrap{
+    display: inline-block;
+    width: 364px;
+    padding-left: 50px;
+    padding-top: 25px;
+    text-align: left;
+    background: url(../img/company_calculator.png) 0px 30px no-repeat;
+}
+/* 企业邮箱中间部分主体购买栏输入框样式 */
+.content_wrap input{
+    width: 174px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+/* 企业邮箱中间部分主体购买栏输入框下面的文字的样式 */
+.content_wrap .pay p:nth-child(2){
+    font-size:16px;
+}
+.content_wrap .pay p:nth-child(2) span{
+        color: #025bc9;
+}
+/* 企业邮箱中间部分主体用户表单提交区域样式 */
+.column .column-body .form{
+    padding:70px 0;
+}
+.column .column-body .form_wrap{
+    width:1080px;
+}
+/* 企业邮箱中间部分主体用户表单提交区域标题样式 */
+.form_wrap .title{
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格样式 */
+.form_wrap table{
+    width: 580px;
+    color: #666;
+    border-collapse: collapse;
+    border-color:grey
+}
+.form_wrap table th{
+    font-size:16px;
+    text-align:right;
+}
+.form_wrap table td{
+    padding:10px 0px;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格电话输入框所在单元格样式 */
+.form_wrap table #input-phone{
+    width:375px;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格输入框通用样式 */
+.form_wrap table td .inputmore{
+    width: 346px;
+    height: 26px;
+    padding: 0 5px;
+    border: 1px solid #bbbbbb;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格电话栏第一个输入框样式 */
+.form_wrap table td input[name=first]{
+    width: 100px;
+    height: 26px;
+    padding: 0 5px;
+    border: 1px solid #bbbbbb;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格电话栏连接文字样式 */
+.form_wrap table td #phone-link{
+    display:inline-block;
+    width:20px;
+    height: 26px;
+    text-align:center;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格电话栏第二个输入框样式 */
+.form_wrap table td input[name=last]{
+    width: 214px;
+    height: 26px;
+    padding: 0 5px;
+    border: 1px solid #bbbbbb;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格地区下拉框样式 */
+.form_wrap table td select{
+    width: 177px;
+    height: 28px;
+}
+/* 企业邮箱中间部分主体用户表单提交区域表格提交按钮样式 */
+.form_wrap table td input[type=submit]{
+    width: 138px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 21px;
+    text-align: center;
+    color: #fff;
+    background-color:#3dbd82;
+    cursor: pointer;
+}
+/* 企业邮箱中间部分主体公告栏样式 */
+.column .column-body .block{
+    padding:50px 0 40px 0;
+    background: #f1f3f4 !important;
+}
+/* 企业邮箱中间部分主体公告栏弹性盒子样式 */
+.column .column-body .block .block_warp{
+    width:1080px;
+    height:194px;
+    display:flex;
+    flex-direction:row;
+}
+.block .block_warp li{
+    float:none;
+    padding-left:40px;
+    line-height:28px;
+}
+.block .block_warp li a{
+    color: #808080;
+    font-size:14px;
+}
+/* 企业邮箱中间部分主体公告栏弹性盒子左盒子样式 */
+.block .block_warp .left{
+    width:336px;
+}
+/* 企业邮箱中间部分主体公告栏弹性盒子中间盒子样式 */
+.block .block_warp .center{
+    width:336px;
+    border-left: 1px solid #c3c1c1;
+    border-right: 1px solid #c3c1c1;
+}
+/* 企业邮箱中间部分主体公告栏弹性盒子右盒子样式 */
+.block .block_warp .right{
+    width:408px;
+    background:url(../img/company_contact.jpg) no-repeat 40px;
+}
+/* 企业邮箱中间部分主体公告栏弹性盒子右盒子标题样式 */
+.block .block_warp .right .title{
+    padding-left:40px;
+}
+/* 企业邮箱中间部分主体公告栏弹性盒子标题通用样式 */
+.block .block_warp .title{
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #666;
+}
+/* 企业邮箱中间部分主体公告栏弹性盒子查看更多通用样式 */
+.block .block_warp .more{
+    padding-right: 35px;
+    line-height: 28px;
+    text-align: right;
+}
+.block .block_warp .more a{
+    color: #0154a0;
+    font-size:12px;
+}
+/* 企业邮箱中间部分主体链接栏样式 */
+.link{
+    padding:50px 0;
+}
+.link .link_warp{
+    width:1080px;
+}
+/* 企业邮箱中间部分主体链接栏表格样式 */
+.link .link_warp table{
+    border-collapse: collapse;
+    border-color:grey;
+    width:1040px;
+}
+/* 企业邮箱中间部分主体链接栏表格标题行样式 */
+.link .link_warp table th{
+    text-align:left;
+    font-size: 14px;
+    line-height: 28px;
+    color: #666666;
+    font-weight: bold;
+}
+/* 企业邮箱中间部分主体链接栏表格每个链接样式 */
+.link .link_warp table td a{
+    font-size: 12px;
+    color: #808080;
+    line-height:26px;
+}
+.link .link_warp table td span{
+    padding-right:15px;
+}
+/* 企业邮箱中间部分右边定位链接样式 */
+.column .column-aside{
+    width: 62px;
+    position: fixed !important;
+    top: 250px;
+    right: 10px;
+    z-index: 999
+}
+/* 企业邮箱中间部分右边定位链接的每个小链接盒子样式 */
+.column .column-aside div{
+    position: relative;
+    width: 60px;
+    height: 36px;
+    padding: 12px 0;
+    margin-bottom: 10px;
+    border: 1px solid #bbbbbb;
+    background:#fff url("../img/company-aside-contact.png") no-repeat;
+}
+/* 企业邮箱中间部分右边定位链接电话链接样式 */
+.column .column-aside .phone{
+        background-position:-154px -2px;
+}
+/* 企业邮箱中间部分右边定位链接信息链接样式 */
+.column .column-aside .info{
+        background-position:-154px -64px;
+}
+/* 企业邮箱中间部分右边定位链接帮助链接样式 */
+.column .column-aside .help{
+        background-position:-82px -128px;
+}
+/* 企业邮箱中间部分右边定位链接免费试用链接样式 */
+.column .column-aside .register{
+        background:#fff url("../img/company-register-tip.jpg") no-repeat center ;
+}
+/* 企业邮箱底部样式 */
+.footer{
+    width:100%;
+    min-width: 1080px;
+    height: 140px;
+    text-align: center;
+    background: #666666;
+    color: #ffffff;
+    padding: 38px 0;
+}
+.footer .footer_wrap{
+    padding: 38px 0;
+    width:1080px;
+}
+.footer_wrap a{
+    color: #ffffff;
+}
+/* 企业邮箱底部认证图标样式 */
+.footer_wrap .img{
+    position: relative;
+    left: 4px;
+    top: 4px;
+}
